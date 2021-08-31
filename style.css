@@ -546,7 +546,10 @@ footer span a:hover{
 }
 @media (max-width: 947px){
     .home{
-        width: 105%;
+        width: 100%;
+    }
+    .navbar{
+        width: 100%;
     }
     .menu-btn{
         display: block;
@@ -621,7 +624,7 @@ footer span a:hover{
         width: 100%;
     }
     .navbar{
-        width: 95%;
+        width: 100%;
     }
     .max-width{
         padding: 0 23px;
@@ -645,7 +648,7 @@ footer span a:hover{
         width: 100%;
     }
     .navbar{
-        width: 97%;
+        width: 100%;
     }
     .home .home-content .text-2{
         font-size: 50px;
