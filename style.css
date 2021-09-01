@@ -598,6 +598,8 @@ footer span a:hover{
     .menu-btn{
         display: block;
         z-index: 999;
+        position: relative;
+        left: -5%;
     }
     .menu-btn i.active:before{
         content: "\f00d";
@@ -700,6 +702,12 @@ footer span a:hover{
 
 @media (max-width: 500px) {
     .home{
+        width: 107%;
+    }
+    .footer{
+        width: 107%;
+    }
+    .experience{
         width: 100%;
     }
     .navbar{
