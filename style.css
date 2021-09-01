@@ -35,11 +35,12 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .interest, .contact, footer{
+.about,.education, .experience, .skills, .interest, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.services .serv-content,
+.education .education-content,
+.experience .exp-content,
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -197,41 +198,18 @@ section .title::after{
     color: crimson;
     font-weight: 500;
 }
-
-
 /* about section styling */
-
 .about .about-content .left{
-    width: 33%;
+    width: 45%;
 }
-.about .about-content .left .text{
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 10px;
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
 }
-.about .about-content .left .text span{
-    color: crimson;
-}
-.about .about-content .left p{
-    text-align: justify;
-}
-.about .about-content .middle{
-    width: 33%;
-}
-.about .about-content .middle .text{
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-.about .about-content .middle .text span{
-    color: crimson;
-}
-.about .about-content .middle p{
-    text-align: justify;
-}
-
 .about .about-content .right{
-    width: 33%;
+    width: 55%;
 }
 .about .about-content .right .text{
     font-size: 25px;
@@ -261,17 +239,80 @@ section .title::after{
     background: none;
 }
 
+
+/* education section styling */
+
+.education .education-content .left{
+    width: 33%;
+}
+.education .education-content .left .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.education .education-content .left .text span{
+    color: crimson;
+}
+.education .education-content .left p{
+    text-align: justify;
+}
+.education .education-content .middle{
+    width: 33%;
+}
+.education .education-content .middle .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.education .education-content .middle .text span{
+    color: crimson;
+}
+.education .education-content .middle p{
+    text-align: justify;
+}
+
+.education .education-content .right{
+    width: 33%;
+}
+.education .education-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.education .education-content .right .text span{
+    color: crimson;
+}
+.education .education-content .right p{
+    text-align: justify;
+}
+.education .education-content .right a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.education .education-content .right a:hover{
+    color: crimson;
+    background: none;
+}
+
 /* Experience section styling */
-.services, .interest{
+.experience, .interest{
     color:#fff;
     background: #111;
 }
-.services .title::before,
+.experience .title::before,
 .interest .title::before{
     background: #fff;
 }
-.services .title::after,
-.services .serv-content .card{
+.experience .title::after,
+.experience .exp-content .card{
     width: calc(50% - 20px);
     background: #222;
     text-align:unset;
@@ -279,24 +320,24 @@ section .title::after{
     padding: 50px 33px;
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover{
+.experience .exp-content .card:hover{
     background: crimson;
 }
-.services .serv-content .card .box{
+.experience .exp-content .card .box{
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover .box{
+.experience .exp-content .card:hover .box{
     transform: scale(1.05);
 }
-.services .serv-content .card i{
+.experience .exp-content .card i{
     font-size: 50px;
     color: crimson;
     transition: color 0.3s ease;
 }
-.services .serv-content .card:hover i{
+.experience .exp-content .card:hover i{
     color: #fff;
 }
-.services .serv-content .card .text{
+.experience .exp-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -367,6 +408,9 @@ section .title::after{
 .skills-content .right .js::before{
     width: 40%;
 }
+.skills-content .right .react::before{
+    width: 30%;
+}
 .skills-content .right .python::before{
     width: 50%;
 }
@@ -374,16 +418,16 @@ section .title::after{
 
 /* Interest section styling */
 
-.services{
+.experience{
     color:#fff;
     background: #111;
 }
-.services .title::before,
-.services .title::before{
+.experience .title::before,
+.experience .title::before{
     background: #fff;
 }
-.services .title::after,
-.services .serv-content .card{
+.experience .title::after,
+.experience .exp-content .card{
     width: calc(50% - 20px);
     background: #222;
     text-align:unset;
@@ -391,17 +435,17 @@ section .title::after{
     padding: 50px 33px;
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover{
+.experience .exp-content .card:hover{
     background: crimson;
 }
-.services .serv-content .card .box{
+.experience .exp-content .card .box{
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover .box{
+.experience .exp-content .card:hover .box{
     transform: scale(1.05);
 }
 
-.services .serv-content .card .text{
+.experience .exp-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -600,15 +644,26 @@ footer span a:hover{
         width: 100%;
     }
     .about .about-content .left{
-        flex: 100%;
-    }
-    .about .about-content .middle{
-        flex: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
     }
     .about .about-content .right{
         flex: 100%;
     }
-    .services .serv-content .card{
+    .education .education-content .column{
+        width: 100%;
+    }
+    .education .education-content .left{
+        flex: 100%;
+    }
+    .education .education-content .middle{
+        flex: 100%;
+    }
+    .education .education-content .right{
+        flex: 100%;
+    }
+    .experience .exp-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -638,7 +693,7 @@ footer span a:hover{
     .home .home-content a{
         font-size: 20px;
     }
-    .services .serv-content .card{
+    .experience .exp-content .card{
         width: 100%;
     }
 }
@@ -657,8 +712,9 @@ footer span a:hover{
         font-size: 27px;
     }
     .about .about-content .right .text,
-    .about .about-content .left .text,
-    .about .about-content .middle .text,
+    .education .education-content .right .text,
+    .education .education-content .left .text,
+    .education .education-content .middle .text,
     .skills .skills-content .left .text{
         font-size: 19px;
     }
