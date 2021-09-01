@@ -1,4 +1,4 @@
-/*css*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 *{
@@ -244,6 +244,7 @@ section .title::after{
 
 .education .education-content .left{
     width: 33%;
+    position: relative; bottom: -19px;
 }
 .education .education-content .left .text{
     font-size: 25px;
@@ -658,6 +659,7 @@ footer span a:hover{
     }
     .education .education-content .left{
         flex: 100%;
+        bottom: 0px;
     }
     .education .education-content .middle{
         flex: 100%;
